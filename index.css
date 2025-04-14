@@ -1339,6 +1339,20 @@
     }
   }
 
+.mail-link{
+    text-decoration: none;
+    color: inherit;
+}
+.mail-link:hover{
+    text-decoration: underline;
+    color:#3651EA;
+    cursor: pointer;
+}
+
+
+
+
+
 
 /* animations */
 /* Ripple effect for buttons */
