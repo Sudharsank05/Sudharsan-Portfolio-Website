@@ -1581,41 +1581,110 @@
     overflow: hidden;
 }
 
+/*  */
+/* ===== Global Animation Styles ===== */
+* {
+    scroll-behavior: smooth;
+}
 
-section 2 Animations */
-/* ===== Skills Section Animations ===== */
+/* ===== Section Entrance Animations ===== */
+.section-2, .section-3, .section-4 {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-2.animate, .section-3.animate, .section-4.animate {
+    opacity: 1;
+}
+
+/* ===== About Section (Section 3) ===== */
+.section-3 {
+    transform: translateY(50px);
+}
+
+.section-3.animate {
+    transform: translateY(0);
+    animation: sectionFadeIn 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+.stats-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease 0.3s;
+}
+
+.section-3.animate .stats-container {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stat-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* background: linear-gradient(90deg, #3651ea, #f94c10); */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s ease-out;
+}
+
+.section-3.animate .stat-item::before {
+    transform: scaleX(1);
+}
+
+.count {
+    display: inline-block;
+    font-weight: 700;
+}
+
+/* ===== Skills Section (Section 2) ===== */
+.section-2 {
+    transform: perspective(1000px) rotateX(5deg) translateY(50px);
+    transform-origin: bottom;
+}
+
 .section-2.animate {
-    animation: fadeInSkills 1s ease-out both;
+    transform: perspective(1000px) rotateX(0) translateY(0);
+    animation: sectionSlideUp 1s cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 
 .skill-1, .skill-2, .skill-3, .skill-4 {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(30px) scale(0.95);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
 .section-2.animate .skill-1 {
     animation: 
-        fadeInUp 0.8s ease-out both 0.2s,
-        skillCardFloat 6s ease-in-out infinite alternate;
+        cardSlideIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both 0.2s,
+        subtleGlow 8s ease-in-out infinite alternate;
 }
 
 .section-2.animate .skill-2 {
     animation: 
-        fadeInUp 0.8s ease-out both 0.4s,
-        skillCardFloat 6s ease-in-out infinite alternate-reverse 0.5s;
+        cardSlideIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both 0.4s,
+        subtleGlow 8s ease-in-out infinite alternate-reverse 0.5s;
 }
 
 .section-2.animate .skill-3 {
     animation: 
-        fadeInUp 0.8s ease-out both 0.6s,
-        skillCardFloat 6s ease-in-out infinite alternate 0.3s;
+        cardSlideIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both 0.6s,
+        subtleGlow 8s ease-in-out infinite alternate 0.3s;
 }
 
 .section-2.animate .skill-4 {
     animation: 
-        fadeInUp 0.8s ease-out both 0.8s,
-        skillCardFloat 6s ease-in-out infinite alternate-reverse 0.7s;
+        cardSlideIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both 0.8s,
+        subtleGlow 8s ease-in-out infinite alternate-reverse 0.7s;
 }
 
 .skill-title {
@@ -1686,24 +1755,171 @@ section 2 Animations */
     animation: listItemReveal 0.4s ease forwards 0.3s;
 }
 
-/* ===== Keyframes for Skills Section ===== */
-@keyframes fadeInSkills {
-    from {
+/* ===== Projects Section (Section 4) ===== */
+.section-4 {
+    transform: translateY(50px);
+    perspective: 1000px;
+}
+
+.section-4.animate {
+    transform: translateY(0);
+    animation: sectionFadeIn 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+.card-1, .card-2, .card-3 {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(15deg) translateZ(100px);
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    backface-visibility: hidden;
+}
+
+.section-4.animate .card-1 {
+    animation: 
+        cardAppear 1s cubic-bezier(0.19, 1, 0.22, 1) both 0.2s,
+        cardFloat 8s ease-in-out infinite alternate;
+}
+
+.section-4.animate .card-2 {
+    animation: 
+        cardAppear 1s cubic-bezier(0.19, 1, 0.22, 1) both 0.4s,
+        cardFloat 8s ease-in-out infinite alternate-reverse 0.5s;
+}
+
+.section-4.animate .card-3 {
+    animation: 
+        cardAppear 1s cubic-bezier(0.19, 1, 0.22, 1) both 0.6s,
+        cardFloat 8s ease-in-out infinite alternate 0.3s;
+}
+
+.project1-icon, .project2-icon, .project3-icon {
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+
+.card-1:hover .project1-icon,
+.card-2:hover .project2-icon,
+.card-3:hover .project3-icon {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* ===== Footer ===== */
+.footer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.footer.animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation: footerReveal 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+.footer-links div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.footer.animate .footer-links div:nth-child(1) {
+    animation: fadeInUp 0.6s ease-out both 0.2s;
+}
+
+.footer.animate .footer-links div:nth-child(2) {
+    animation: fadeInUp 0.6s ease-out both 0.4s;
+}
+
+.footer.animate .footer-links div:nth-child(3) {
+    animation: fadeInUp 0.6s ease-out both 0.6s;
+}
+
+.footer.animate .footer-links div:nth-child(4) {
+    animation: fadeInUp 0.6s ease-out both 0.8s;
+}
+
+/* ===== Button Animations ===== */
+.know-more-dup, .know-more-dup1, .know-more-dup2, .know-more-dup3 {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: center;
+}
+
+.know-more-dup:hover, 
+.know-more-dup1:hover, 
+.know-more-dup2:hover, 
+.know-more-dup3:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.know-more-dup:active, 
+.know-more-dup1:active, 
+.know-more-dup2:active, 
+.know-more-dup3:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+/* ===== Keyframes ===== */
+@keyframes sectionFadeIn {
+    from { 
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(50px);
     }
-    to {
+    to { 
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@keyframes skillCardFloat {
-    0%, 100% {
-        transform: translateY(0);
+@keyframes sectionSlideUp {
+    from { 
+        opacity: 0;
+        transform: perspective(1000px) rotateX(5deg) translateY(50px);
     }
-    50% {
-        transform: translateY(-10px);
+    to { 
+        opacity: 1;
+        transform: perspective(1000px) rotateX(0) translateY(0);
+    }
+}
+
+@keyframes cardSlideIn {
+    from { 
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes cardAppear {
+    from { 
+        opacity: 0;
+        transform: perspective(1000px) rotateY(15deg) translateZ(100px);
+    }
+    to { 
+        opacity: 1;
+        transform: perspective(1000px) rotateY(0) translateZ(0);
+    }
+}
+
+@keyframes cardFloat {
+    0%, 100% { 
+        transform: translateY(0) rotateY(0);
+    }
+    50% { 
+        transform: translateY(-10px) rotateY(2deg);
+    }
+}
+
+@keyframes subtleGlow {
+    0%, 100% { 
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    50% { 
+        box-shadow: 0 8px 30px rgba(54, 81, 234, 0.1);
     }
 }
 
@@ -1755,171 +1971,15 @@ section 2 Animations */
     }
 }
 
-/* ===== Skill Bars Animation (Optional) ===== */
-/* Add if you want animated skill bars */
-.skill-bar {
-    height: 6px;
-    background: #e0e0e0;
-    border-radius: 3px;
-    overflow: hidden;
-    position: relative;
-}
-
-.skill-progress {
-    height: 100%;
-    background: linear-gradient(90deg, #3651ea, #f94c10);
-    width: 0;
-    transition: width 1.5s ease-out;
-}
-
-.section-2.animate .skill-progress {
-    width: var(--skill-level); /* Set this via JS or inline style */
-}
-
-/* ===== Glow Effect on Hover ===== */
-.skill-1:hover, 
-.skill-2:hover, 
-.skill-3:hover, 
-.skill-4:hover {
-    box-shadow: 0 10px 30px rgba(54, 81, 234, 0.2);
-}
-
-.skill-1:hover {
-    border-color: #3651ea;
-}
-
-.skill-2:hover {
-    border-color: #f94c10;
-}
-
-.skill-3:hover {
-    border-color: #47398d;
-}
-
-.skill-4:hover {
-    border-color: #4CAF50;
-}
-
-
-
-/* project section */
-.project-card {
-    animation: 
-        cardAppear 1s cubic-bezier(0.19, 1, 0.22, 1) both;
-    animation-delay: calc(var(--order) * 0.15s);
-}
-
-@keyframes cardAppear {
+@keyframes footerReveal {
     from { 
         opacity: 0;
-        transform: perspective(1000px) rotateY(15deg) translateZ(100px);
+        transform: translateY(50px);
     }
     to { 
         opacity: 1;
-        transform: perspective(1000px) rotateY(0) translateZ(0);
+        transform: translateY(0);
     }
-}
-/* about section
-
-
-
-
-/* ===== Global Animation Styles ===== */
-* {
-    scroll-behavior: smooth;
-}
-
-/* ===== Section Entrance Animations ===== */
-.section-2, .section-3, .section-4 {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.section-2.animate, .section-3.animate, .section-4.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ===== Skills Section (Section 2) ===== */
-.skill-1, .skill-2, .skill-3, .skill-4 {
-    animation: 
-        fadeInUp 0.8s ease-out both,
-        subtleFloat 6s ease-in-out infinite;
-}
-
-.skill-1 { animation-delay: 0.2s; }
-.skill-2 { animation-delay: 0.4s; }
-.skill-3 { animation-delay: 0.6s; }
-.skill-4 { animation-delay: 0.8s; }
-
-@keyframes subtleFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-}
-
-/* ===== Projects Section (Section 4) ===== */
-.card-1, .card-2, .card-3 {
-    animation: 
-        fadeInUp 0.8s ease-out both,
-        cardShadowPulse 8s ease-in-out infinite;
-}
-
-.card-1 { animation-delay: 0.3s; }
-.card-2 { animation-delay: 0.5s; }
-.card-3 { animation-delay: 0.7s; }
-
-@keyframes cardShadowPulse {
-    0%, 100% { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-    50% { box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
-}
-
-/* ===== About Section (Section 3) ===== */
-.about-content {
-    animation: 
-        fadeInLeft 0.8s ease-out both,
-        contentGlow 10s linear infinite;
-}
-
-.stats-container {
-    animation: fadeInRight 0.8s ease-out both;
-}
-
-@keyframes contentGlow {
-    0%, 100% { 
-        box-shadow: 0 0 0 rgba(54, 81, 234, 0); 
-    }
-    50% { 
-        box-shadow: 0 0 30px rgba(54, 81, 234, 0.05); 
-    }
-}
-
-/* ===== Footer ===== */
-.footer-links div {
-    animation: fadeIn 0.8s ease-out both;
-}
-
-.footer-links div:nth-child(1) { animation-delay: 0.2s; }
-.footer-links div:nth-child(2) { animation-delay: 0.4s; }
-.footer-links div:nth-child(3) { animation-delay: 0.6s; }
-.footer-links div:nth-child(4) { animation-delay: 0.8s; }
-
-/* ===== Button Animations (Keep subtle) ===== */
-.know-more-dup, .know-more-dup1, .know-more-dup2, .know-more-dup3 {
-    transition: transform 0.3s ease;
-}
-
-.know-more-dup:active, 
-.know-more-dup1:active, 
-.know-more-dup2:active, 
-.know-more-dup3:active {
-    transform: scale(0.98);
-}
-
-/* ===== Keyframes ===== */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 @keyframes fadeInUp {
@@ -1931,26 +1991,4 @@ section 2 Animations */
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-@keyframes fadeInLeft {
-    from { 
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to { 
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from { 
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    to { 
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+}   
