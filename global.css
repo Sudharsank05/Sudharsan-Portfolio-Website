@@ -1,0 +1,10 @@
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+
