@@ -1,0 +1,1693 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sud-landing-page {
+    width: 100%;
+    position: relative;
+    background-color: #191919;
+    overflow-x: hidden;
+    text-align: left;
+    font-size: clamp(16px, 2.5vw, 18px);
+    color: #000;
+    font-family: Poppins;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f3f3f3;
+    width: 1442px;
+    height: 1024px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #191919;
+    font-family: Lato;
+}
+
+.hero-section-child {
+    position: absolute;
+    top: 851.99px;
+    left: 139px;
+    width: 1075px;
+    height: 0px;
+    display: none;
+}
+
+.scroll-down {
+    position: absolute;
+    top: 900px;
+    height: auto;
+    width: max-content;
+    left: 1405px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+}
+
+.freelancer-icon {
+    position: absolute;
+    top: 114.65px;
+    left: 395.33px;
+    width: 785.3px;
+    height: 926px;
+    object-fit: contain;
+}
+
+.web-icon {
+    position: absolute;
+    top: 853px;
+    left: 857px;
+    width: 128.9px;
+    height: 128.9px;
+}
+
+.shop-logo-1 {
+    position: absolute;
+    top: 574.99px;
+    left: 108.91px;
+    width: 70.8px;
+    height: 67.3px;
+    overflow: hidden;
+    transform: rotate(11deg);
+    transform-origin: 0 0;
+    display: none;
+}
+
+.male-logo-1 {
+    position: absolute;
+    top: 551px;
+    left: 1275px;
+    border-radius: 20px;
+    width: 86px;
+    height: 86px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.hello {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    letter-spacing: -0.02em;
+}
+
+.span1 {
+    color: #eee5e0;
+}
+
+.sudharsan1 {
+    background: linear-gradient(90deg, rgba(54, 81, 234, 0.21), #3651ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.span2 {
+    background: linear-gradient(90deg, #f94c10, #47398d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.im-sudharsan1 {
+    font-size: 150px;
+    font-family: Anton;
+}
+
+.im-sudharsan {
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 433.5px);
+    letter-spacing: -0.02em;
+    -webkit-text-stroke: 1px #000;
+    color: #191919;
+}
+
+.hero-title {
+    position: absolute;
+    top: 90px;
+    left: 179px;
+    width: 1027px;
+    height: 276px;
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    font-family: 'Birthstone Bounce';
+}
+
+.hero-sud-icon {
+    width: 497px;
+    margin-top: 140px;
+    margin-left: 420px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 885px;
+    object-fit: cover;
+}
+
+.web-developer {
+    color: #f3f3f3;
+}
+
+.span3 {
+    color: #ff0000;
+}
+
+.web-developer-container {
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+
+.web-developer-designer-wrapper {
+    position: absolute;
+    top: 316px;
+    left: 1018px;
+    border-radius: 10px;
+    background-color: #191919;
+    width: 323px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 21px;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #ff0909;
+    font-family: Anton;
+}
+
+.denqueue-icon {
+    position: absolute;
+    top: 330.54px;
+    left: calc(50% - 502.27px);
+    border-radius: 20px;
+    width: 256.9px;
+    height: 300.5px;
+    object-fit: contain;
+}
+
+.nodejs-icon {
+    position: absolute;
+    top: 551px;
+    left: 852px;
+    width: 363.3px;
+    height: 363.3px;
+    object-fit: contain;
+}
+
+.react-icon {
+    position: absolute;
+    top: 393px;
+    left: 1028px;
+    width: 237px;
+    height: 237px;
+    object-fit: contain;
+}
+
+.git-icon {
+    position: absolute;
+    top: 487.56px;
+    left: 873.81px;
+    width: 129.5px;
+    height: 129.5px;
+    object-fit: contain;
+}
+
+.github-icon {
+    position: absolute;
+    top: 403px;
+    left: 49px;
+    width: 137px;
+    height: 137px;
+    object-fit: cover;
+}
+
+.hero-section-item {
+    position: absolute;
+    top: 974px;
+    left: 493px;
+    width: 347px;
+    height: 50px;
+    display: cover;
+}
+
+.figma-icon {
+    position: absolute;
+    top: 664px;
+    left: 1147px;
+    width: 249.1px;
+    height: 249.1px;
+    object-fit: contain;
+}
+
+.ui-ux-icon {
+    position: absolute;
+    top: 575px;
+    left: 123px;
+    width: 111.6px;
+    height: 86.5px;
+    object-fit: contain;
+}
+
+.co-founder {
+    position: absolute;
+    top: 630.16px;
+    left: 294px;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    font-family: Anton;
+    color: #191825;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190.6px;
+    height: 35.2px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-15.9deg);
+    transform-origin: 0 0;
+}
+
+/* Navbar */
+.navbar {
+    font-family: 'Poppins';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1442px;
+    height: 89px;
+    color: #fff;
+}
+
+.navbar-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #191919;
+    width: 1442px;
+    height: 89px;
+}
+
+.sudharsan2 {
+    position: absolute;
+    top: 27px;
+    left: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Anton;
+}
+
+.home-parent {
+    position: absolute;
+    top: 35px;
+    left: 944px;
+    width: 457.8px;
+    height: 17px;
+}
+
+.contact-parent {
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    width: 367.8px;
+    height: 17px;
+    text-align: center;
+}
+
+.home {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 48.4px;
+}
+
+.contact2, .projects1, .skills2, .about-me2 {
+    text-decoration: none;
+    color: inherit;
+    position: absolute;
+    top: 0px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+}
+
+.contact2 { left: 308px; width: 59.8px; }
+.projects1 { left: 212px; }
+.skills2 { left: 118px; }
+.about-me2 { left: 0px; }
+
+/* Skills Section */
+.section-2 {
+    position: absolute;
+    top: 1024px;
+    left: calc(50% - 721px);
+    background-color: #191919;
+    width: 1440px;
+    height: 1414px;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+.skills {
+    position: absolute;
+    top: 2px;
+    left: calc(50% - 755px);
+    font-size: 170px;
+    letter-spacing: -0.02em;
+    font-family: Anton;
+    color: #6078ff;
+    text-align: center;
+    opacity: 0.2;
+}
+
+.skills1 {
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 680px);
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #fff, #47398d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.technologies-and-tools-container {
+    position: absolute;
+    top: 143px;
+    left: calc(50% - 680px);
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.know-more-dup3 {
+    position: absolute;
+    top: 130px;
+    left: 1159px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #101010;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    width: 223px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    font-size: 28px;
+    color: #3651ea;
+    font-family: 'League Spartan';
+}
+
+.image-removebg-preview-6-1 {
+    position: absolute;
+    top: 306px;
+    left: 61px;
+    width: 165px;
+    height: 63px;
+}
+
+.pointer-icon {
+    position: absolute;
+    top: 181px;
+    left: 1316px;
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+}
+
+.present {
+    position: absolute;
+    top: 27px;
+    left: 1317px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: Lato;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 88px;
+    height: 17px;
+    opacity: 0.8;
+}
+
+.skill-1, .skill-2, .skill-3, .skill-4 {
+    position: absolute;
+    width: 615px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-1 { top: 268px; left: 66px; }
+.skill-2 { top: 268px; left: 758px; }
+.skill-3 { top: 808px; left: 66px; height: 553px; }
+.skill-4 { top: 808px; left: 758px; height: 553px; }
+
+.skill-1-child, .skill-3-child {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(27.8px);
+    border-radius: 40px;
+    background-color: #fff;
+    border: 3px solid #3651ea;
+    box-sizing: border-box;
+    width: 621px;
+    height: 506px;
+}
+
+.web-development3, .uiux-web, .cms-e-commerce, .creative-multimedia {
+    position: absolute;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'League Spartan';
+    color: #212121;
+    text-align: center;
+}
+
+.web-development3 { top: 153px; left: calc(50% - 286.5px); }
+.uiux-web { top: 153px; left: calc(50% - 287.5px); }
+.cms-e-commerce { top: 153px; left: calc(50% - 287.5px); width: 515px; }
+.creative-multimedia { top: 172px; left: calc(50% - 287.5px); }
+
+.web-development-logo-icon {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.building-interactive-fast, .designing-clean-and, .building-fast-functional, .enhancing-visuals-through {
+    position: absolute;
+    top: 210px;
+    left: 20px;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    width: 570px;
+}
+
+.html5-css3-javascript-container, .figma-wireframing-prototypin-container,
+.shopify-store-customization-container, .davinci-resolve-basic-container {
+    position: absolute;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.html5-css3-javascript-container { top: 286px; left: 9px; }
+.figma-wireframing-prototypin-container { top: 260px; left: 9px; }
+.shopify-store-customization-container { top: 306px; left: 9px; }
+.davinci-resolve-basic-container { top: 324px; left: 9px; }
+
+/* About Me Section */
+.section-3 {
+    position: absolute;
+    top: 2438px;
+    left: 0px;
+    width: 1442px;
+    height: 782px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: Anton;
+}
+
+.section-3-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #383838;
+    width: 1442px;
+    height: 782px;
+}
+
+.about-me {
+    position: absolute;
+    top: 100px;
+    left: 643px;
+    width: 689px;
+    height: 577px;
+}
+
+.about-me1 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 328.5px);
+    letter-spacing: -0.02em;
+    font-family: Poppins;
+    background: linear-gradient(90deg, #fff, #47398d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.who-is-sudharsan-container {
+    padding: 0 2px;
+    position: absolute;
+    display: inline-flex;
+    top: 70px;
+    left: calc(50% - 344.5px);
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #fff, #3651ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+}
+
+.sudharsan {
+    position: absolute;
+    top: 519px;
+    left: 385px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    font-family: 'Birthstone Bounce';
+    background: linear-gradient(90deg, #fff, #3651ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.im-a-passionate3 {
+    position: absolute;
+    top: 150px;
+    left: 6px;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    font-family: Poppins;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 614px;
+}
+
+.know-more-dup2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #101010;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    width: 333px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 40px;
+}
+
+.know-more-dup-parent {
+    position: absolute;
+    top: 515px;
+    left: 6px;
+    width: 333px;
+    height: 62px;
+    text-align: left;
+    font-size: 28px;
+    color: #3651ea;
+    font-family: 'League Spartan';
+}
+
+.sud-icon {
+    position: absolute;
+    top: 138px;
+    left: 86px;
+    border-radius: 550px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.stats-container {
+    top: 340px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.count {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Projects Section */
+.section-4 {
+    position: absolute;
+    top: 3220px;
+    left: calc(50% - 723px);
+    background-color: #191919;
+    width: 1442px;
+    height: 1924px;
+    overflow: hidden;
+}
+
+.projects {
+    position: absolute;
+    top: -6px;
+    left: calc(50% - 298px);
+    font-size: 170px;
+    letter-spacing: -0.02em;
+    font-family: Anton;
+    color: #6078ff;
+    text-align: center;
+    opacity: 0.2;
+}
+
+.my-projects {
+    position: absolute;
+    top: 78px;
+    left: calc(50% - 129px);
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #fff, #47398d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.know-more-dup, .know-more-dup1 {
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background-color: #101010;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    width: 176px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    font-size: 28px;
+    color: #3651ea;
+    font-family: 'League Spartan';
+    cursor: pointer;
+}
+
+.know-more-dup { top: 250px; left: 763px; }
+.know-more-dup1 { top: 250px; left: 504px; }
+
+.card-1, .card-2, .card-3 {
+    position: absolute;
+    width: 1130px;
+    height: 485px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-1 { top: 348px; left: 157px; }
+.card-2 { top: 869px; left: 156px; }
+.card-3 { top: 1390px; left: 157px; }
+
+.card1 {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    background-color: #d9d9d9;
+    border: 8px solid #78797a;
+    box-sizing: border-box;
+    width: 1136px;
+    height: 491px;
+}
+
+.web-development {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    line-height: 44px;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'League Spartan';
+    color: #212121;
+    text-align: left;
+}
+
+.im-a-passionate {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    display: block;
+    font-size: smaller;
+    align-items: center;
+    width: 614px;
+}
+
+.project1-icon, .project2-icon, .project3-icon {
+    position: absolute;
+    top: 21px;
+    left: 687px;
+    border-radius: 40px;
+    border: 3px solid black;
+    width: 421px;
+    height: 445px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    top: 5144px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    background-color: #fff;
+    width: 1400px;
+    height: auto;
+    min-height: 630px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.get-in-touch-container {
+    font-size: 60px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    text-align: center;
+    color: #000;
+}
+
+.get-in-touch-container1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.get {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.contact {
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: #1e71ff;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+    text-align: center;
+}
+
+.contact1 {
+    width: 480px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-child {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(28.9px);
+    border-radius: 50px;
+    background-color: rgba(217, 217, 217, 0.7);
+    width: 100%;
+    max-width: 480px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.mail-id {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sudharsanpoygmailcom {
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    flex-grow: 1;
+}
+
+.email {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.email-child {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-links {
+    width: 100%;
+    max-width: 800px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.frame-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.linkedin-wrapper {
+    width: 125px;
+    border-radius: 60px;
+    background-color: #1e71ff;
+    border: 1px solid #000;
+    height: 41px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 29px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.linkedin, .behance, .instagram, .gmail {
+    color: #fff;
+    font-weight: 500;
+}
+
+.sudharsan-k-all-rights-reserv-parent {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.sudharsan-k-all {
+    margin: 0;
+}
+
+/* Animations and Other Styles */
+.web-developer-container {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animations */
+.hero-title {
+    animation: 
+        fadeInUp 0.8s ease-out both,
+        subtleWave 8s ease-in-out infinite;
+}
+
+.hero-sud-icon {
+    animation: 
+        fadeIn 1.2s ease-out both 0.3s,
+        float 6s ease-in-out infinite alternate;
+}
+
+.im-sudharsan1 {
+    position: relative;
+    display: inline-block;
+    animation: 
+        trackingInExpand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 0.5s,
+        textStrokePulse 3s ease-in-out infinite alternate;
+}
+
+.sudharsan1 {
+    position: relative;
+}
+
+.sudharsan1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: 
+        underlineExpand 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards 1.2s,
+        underlineFlow 3s ease-in-out infinite alternate;
+}
+
+.web-developer-container {
+    animation: 
+        typewriter 1.2s steps(24) 1s 1 normal both,
+        blinkTextCursor 750ms steps(24) infinite normal;
+    position: relative;
+}
+
+.web-developer-container::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    animation: blinkCursor 0.7s infinite;
+}
+
+/* Keyframes */
+@keyframes trackingInExpand {
+    0% { letter-spacing: -0.5em; opacity: 0; }
+    40% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+@keyframes textStrokePulse {
+    0% { -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: rgba(54, 81, 234, 0.2); }
+    100% { -webkit-text-stroke-width: 1.5px; -webkit-text-stroke-color: rgba(54, 81, 234, 0.5); }
+}
+
+@keyframes underlineExpand {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+@keyframes underlineFlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes subtleWave {
+    0%, 100% { transform: translateY(0) rotate(0.5deg); }
+    50% { transform: translateY(-5px) rotate(-0.5deg); }
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinkTextCursor {
+    from, to { border-right-color: transparent; }
+    50% { border-right-color: #f94c10; }
+}
+
+@keyframes blinkCursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.nodejs-icon, .react-icon, .git-icon, .github-icon, .figma-icon, .ui-ux-icon,
+.denqueue-icon, .webdev-icon, .web-icon {
+    animation: float 6s ease-in-out infinite;
+}
+
+.section-2.animate .skill-1, .section-2.animate .skill-2,
+.section-2.animate .skill-3, .section-2.animate .skill-4 {
+    animation: 
+        fadeInUp 0.8s ease-out both,
+        skillCardFloat 6s ease-in-out infinite alternate;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .sud-landing-page {
+        height: auto;
+        font-size: clamp(14px, 3vw, 16px);
+    }
+
+    /* Hero Section */
+    .hero-section {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+        min-height: clamp(500px, 80vh, 600px);
+        padding: clamp(60px, 10vw, 80px) clamp(10px, 3vw, 15px) clamp(15px, 4vw, 20px);
+        overflow: visible;
+        box-sizing: border-box;
+    }
+
+    .hero-title {
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: clamp(15px, 4vw, 20px) 0;
+        font-size: clamp(32px, 8vw, 40px);
+    }
+
+    .hello {
+        position: relative;
+        font-size: clamp(24px, 6vw, 32px);
+    }
+
+    .im-sudharsan {
+        position: relative;
+        font-size: clamp(18px, 5vw, 20px);
+    }
+
+    .im-sudharsan1 {
+        font-size: clamp(36px, 10vw, 48px);
+    }
+
+    .hero-sud-icon {
+        position: relative;
+        width: clamp(200px, 80%, 300px);
+        height: auto;
+        margin: clamp(15px, 4vw, 20px) auto;
+        display: block;
+    }
+
+    .web-developer-designer-wrapper {
+        position: relative;
+        width: clamp(200px, 80%, 300px);
+        margin: clamp(15px, 4vw, 20px) auto;
+        font-size: clamp(14px, 4vw, 16px);
+        height: auto;
+        padding: clamp(2px, 1vw, 3px) clamp(10px, 3vw, 15px);
+    }
+
+    .web-developer-container {
+        white-space: normal;
+    }
+
+    .scroll-down {
+        position: absolute;
+        top: auto;
+        bottom: clamp(10px, 3vw, 15px);
+        left: 50%;
+        transform: translateX(-50%) rotate(0);
+        font-size: clamp(12px, 3.5vw, 14px);
+        width: auto;
+    }
+
+    .freelancer-icon, .web-icon, .male-logo-1, .webdev-icon,
+    .fitngro-icon, .denqueue-icon, .nodejs-icon, .react-icon, .git-icon,
+    .github-icon, .figma-icon, .ui-ux-icon, .co-founder, .hero-section-item {
+        display: block;
+        position: relative;
+        width: clamp(50px, 15vw, 80px);
+        height: auto;
+        margin: clamp(10px, 2vw, 15px) auto;
+        left: auto;
+        top: auto;
+    }
+
+    .co-founder {
+        font-size: clamp(16px, 4vw, 18px);
+        transform: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Navbar */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: clamp(50px, 12vw, 60px);
+        padding: clamp(8px, 2vw, 10px) clamp(10px, 3vw, 15px);
+        z-index: 1000;
+    }
+
+    .navbar-child {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sudharsan2 {
+        top: clamp(12px, 3vw, 18px);
+        left: clamp(10px, 3vw, 15px);
+        font-size: clamp(18px, 5vw, 20px);
+    }
+
+    .home-parent {
+        top: clamp(25px, 6vw, 30px);
+        left: auto;
+        right: clamp(10px, 3vw, 15px);
+        width: auto;
+        height: auto;
+    }
+
+    .contact-parent {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: clamp(50px, 12vw, 60px);
+        left: 0;
+        width: 100%;
+        background-color: #191919;
+        padding: clamp(15px, 4vw, 20px) 0;
+    }
+
+    .contact-parent.active {
+        display: flex;
+    }
+
+    .home, .contact2, .projects1, .skills2, .about-me2 {
+        position: relative;
+        width: auto;
+        margin: clamp(8px, 2vw, 10px) 0;
+        font-size: clamp(14px, 4vw, 16px);
+        left: auto;
+        top: auto;
+    }
+
+    .mobile-menu-button {
+        position: absolute;
+        top: clamp(12px, 3vw, 18px);
+        right: clamp(10px, 3vw, 15px);
+        font-size: clamp(20px, 5vw, 24px);
+        padding: clamp(6px, 2vw, 8px) clamp(8px, 2.5vw, 12px);
+    }
+
+    /* Skills Section */
+    .section-2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: clamp(600px, 150vh, 800px);
+        padding: clamp(20px, 5vw, 30px) clamp(10px, 3vw, 15px);
+        overflow: visible;
+    }
+
+    .skills {
+        position: relative;
+        font-size: clamp(60px, 15vw, 80px);
+        width: 100%;
+        margin: 0;
+        left: auto;
+    }
+
+    .skills1 {
+        position: absolute;
+        font-size: clamp(24px, 6vw, 28px);
+        margin: clamp(8px, 2vw, 10px) 0;
+        left: 40%;
+    }
+
+    .technologies-and-tools-container {
+        position: absolute;
+        font-size: clamp(14px, 4vw, 16px);
+        width: 100%;
+        margin: clamp(8px, 2vw, 10px) 0;
+        left: auto;
+    }
+
+    .know-more-dup3 {
+        position: absolute;
+        width: clamp(150px, 50%, 200px);
+        margin: clamp(15px, 4vw, 20px) auto;
+        font-size: clamp(18px, 5vw, 20px);
+        height: clamp(50px, 12vw, 60px);
+        padding: clamp(10px, 3vw, 15px) clamp(20px, 5vw, 30px);
+    }
+
+    .skill-1, .skill-2, .skill-3, .skill-4 {
+        position: relative;
+        width: clamp(300px, 90%, 500px);
+        height: auto;
+        min-height: clamp(350px, 80vw, 400px);
+        margin: clamp(15px, 4vw, 20px) auto;
+        top: auto;
+        left: auto;
+        display: block;
+    }
+
+    .skill-1-child, .skill-3-child {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: clamp(350px, 80vw, 400px);
+        padding: clamp(15px, 4vw, 20px);
+        top: auto;
+        left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web-development3, .uiux-web, .cms-e-commerce, .creative-multimedia {
+        position: relative;
+        font-size: clamp(20px, 5vw, 24px);
+        margin: clamp(15px, 4vw, 20px) 0;
+        width: 100%;
+        top: auto;
+        left: auto;
+    }
+
+    .web-development-logo-icon {
+        position: relative;
+        width: clamp(80px, 20vw, 100px);
+        height: auto;
+        margin: clamp(8px, 2vw, 10px) auto;
+        top: auto;
+        left: auto;
+    }
+
+    .building-interactive-fast, .designing-clean-and, .building-fast-functional, .enhancing-visuals-through {
+        position: relative;
+        font-size: clamp(14px, 4vw, 16px);
+        width: 100%;
+        margin: clamp(8px, 2vw, 10px) 0;
+        top: auto;
+        left: auto;
+        text-align: center;
+    }
+
+    .html5-css3-javascript-container, .figma-wireframing-prototypin-container,
+    .shopify-store-customization-container, .davinci-resolve-basic-container {
+        position: relative;
+        font-size: clamp(14px, 4vw, 16px);
+        margin: clamp(8px, 2vw, 10px) 0;
+        top: auto;
+        left: auto;
+        width: 100%;
+    }
+
+    .image-removebg-preview-6-1, .pointer-icon, .present {
+        display: block;
+        position: relative;
+        width: clamp(50px, 15vw, 80px);
+        height: auto;
+        margin: clamp(10px, 2vw, 15px) auto;
+        top: auto;
+        left: auto;
+    }
+
+    .present {
+        font-size: clamp(12px, 3.5vw, 14px);
+        width: auto;
+    }
+
+    /* About Me Section */
+    .section-3 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: clamp(500px, 120vh, 600px);
+        padding: clamp(20px, 5vw, 30px) clamp(10px, 3vw, 15px);
+        overflow: visible;
+    }
+
+    .section-3-child {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-me {
+        position: relative;
+        width: clamp(300px, 90%, 500px);
+        height: auto;
+        margin: 0 auto;
+        top: auto;
+        left: auto;
+    }
+
+    .about-me1 {
+        position: relative;
+        font-size: clamp(24px, 6vw, 28px);
+        margin: clamp(8px, 2vw, 10px) 0;
+        left: auto;
+    }
+
+    .who-is-sudharsan-container {
+        position: relative;
+        font-size: clamp(20px, 5vw, 24px);
+        margin: clamp(8px, 2vw, 10px) 0;
+        left: auto;
+    }
+
+    .sudharsan {
+        position: relative;
+        font-size: clamp(24px, 6vw, 32px);
+        margin: clamp(15px, 4vw, 20px) 0;
+        left: auto;
+    }
+
+    .im-a-passionate3 {
+        position: relative;
+        font-size: clamp(14px, 4vw, 16px);
+        width: 100%;
+        margin: clamp(8px, 2vw, 10px) 0;
+        top: auto;
+        left: auto;
+    }
+
+    .know-more-dup2 {
+        position: relative;
+        width: clamp(200px, 80%, 300px);
+        margin: clamp(15px, 4vw, 20px) auto;
+        font-size: clamp(18px, 5vw, 20px);
+        height: clamp(50px, 12vw, 60px);
+        padding: clamp(10px, 3vw, 15px) clamp(20px, 5vw, 30px);
+        top: auto;
+        left: auto;
+    }
+
+    .know-more-dup-parent {
+        position: relative;
+        width: 100%;
+        margin: clamp(8px, 2vw, 10px) 0;
+        top: auto;
+        left: auto;
+    }
+
+    .sud-icon {
+        position: relative;
+        width: clamp(200px, 80%, 300px);
+        height: auto;
+        margin: clamp(15px, 4vw, 20px) auto;
+        display: block;
+        top: auto;
+        left: auto;
+    }
+
+    .stats-container {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        margin: clamp(15px, 4vw, 20px) 0;
+        width: 100%;
+        top: auto;
+    }
+
+    .stat-item {
+        padding: clamp(10px, 3vw, 15px);
+    }
+
+    .count {
+        font-size: clamp(24px, 6vw, 28px);
+    }
+
+    .label {
+        font-size: clamp(12px, 3.5vw, 14px);
+    }
+
+    .square-arrow-up{
+        margin-right: 0;
+        
+    }
+    /* Projects Section */
+    .section-4 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: clamp(600px, 150vh, 800px);
+        padding: clamp(20px, 5vw, 30px) clamp(10px, 3vw, 15px);
+        overflow: visible;
+    }
+
+    .projects {
+        position: relative;
+        font-size: clamp(60px, 15vw, 80px);
+        width: 100%;
+        margin: 0;
+        left: auto;
+    }
+
+    .my-projects {
+        position: relative;
+        font-size: clamp(24px, 6vw, 28px);
+        margin: clamp(8px, 2vw, 10px) 0;
+        left: auto;
+    }
+
+    .know-more-dup, .know-more-dup1 {
+        position: relative;
+        width: clamp(120px, 40%, 160px);
+        margin: clamp(8px, 2vw, 10px) auto;
+        font-size: clamp(18px, 5vw, 20px);
+        height: clamp(50px, 12vw, 60px);
+        padding: clamp(10px, 3vw, 15px) clamp(20px, 5vw, 30px);
+        top: auto;
+        left: auto;
+    }
+
+    .card-1, .card-2, .card-3 {
+        position: relative;
+        width: clamp(300px, 90%, 500px);
+        height: auto;
+        min-height: clamp(350px, 80vw, 400px);
+        margin: clamp(15px, 4vw, 20px) auto;
+        top: auto;
+        left: auto;
+        display: block;
+    }
+
+    .card1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: clamp(350px, 80vw, 400px);
+        padding: clamp(15px, 4vw, 20px);
+        top: auto;
+        left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web-development {
+        position: relative;
+        font-size: clamp(20px, 5vw, 24px);
+        margin: clamp(8px, 2vw, 10px) 0;
+        top: auto;
+        left: auto;
+        line-height: clamp(30px, 7vw, 36px);
+        text-align: center;
+        width: 100%;
+    }
+
+    .im-a-passionate {
+        position: relative;
+        font-size: clamp(12px, 3.5vw, 14px);
+        width: 100%;
+        margin: clamp(8px, 2vw, 10px) 0;
+        top: auto;
+        left: auto;
+        text-align: left;
+    }
+
+    .project1-icon, .project2-icon, .project3-icon {
+        position: relative;
+        width: clamp(200px, 80%, 300px);
+        height: auto;
+       _entirety: clamp(200px, 80%, 300px);
+        margin: clamp(8px, 2vw, 10px) auto;
+        top: auto;
+        left: auto;
+    }
+
+    /* Footer */
+    .footer {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+        min-height: clamp(350px, 80vh, 400px);
+        padding: clamp(20px, 5vw, 30px) clamp(10px, 3vw, 15px);
+        border-radius: clamp(15px, 4vw, 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(15px, 4vw, 20px);
+    }
+
+    .get-in-touch-container {
+        font-size: clamp(28px, 7vw, 32px);
+        margin: clamp(8px, 2vw, 10px) 0;
+        text-align: center;
+    }
+
+    .contact {
+        font-size: clamp(20px, 5vw, 24px);
+        margin: clamp(8px, 2vw, 10px) 0;
+    }
+
+    .contact1 {
+        width: clamp(250px, 90%, 400px);
+        /* margin: clamp(15px, 4vw, 20px) auto; */
+        height: auto;
+    }
+
+    .contact-child {
+        padding: clamp(8px, 2vw, 10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mail-id {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: 5rem;
+    }
+
+    .sudharsanpoygmailcom {
+        font-size: clamp(14px, 4vw, 16px);
+        margin: 0;
+        color: #000;
+    }
+
+    .email {
+        width: clamp(24px, 6vw, 30px);
+        height: auto;
+        margin-left: 40%;
+        margin-right: clamp(5px, 1.5vw, 8px);
+    }
+
+    .footer-links {
+        margin: clamp(15px, 4vw, 20px) 0;
+        width: 100%;
+        max-width: clamp(300px, 90%, 500px);
+    }
+
+    .frame-parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: clamp(10px, 3vw, 15px);
+        justify-content: center;
+    }
+
+    .linkedin-wrapper {
+        width: clamp(100px, 30%, 120px);
+        font-size: clamp(14px, 4vw, 16px);
+        padding: clamp(4px, 1.5vw, 6px) clamp(15px, 4vw, 20px);
+    }
+
+    .sudharsan-k-all-rights-reserv-parent {
+        font-size: clamp(12px, 3.5vw, 14px);
+        margin: clamp(15px, 4vw, 20px) 0;
+    }
+
+    @media (max-width: 400px) {
+        .hero-title {
+            font-size: clamp(28px, 7vw, 32px);
+        }
+
+        .hello {
+            font-size: clamp(20px, 5vw, 24px);
+        }
+
+        .im-sudharsan1 {
+            font-size: clamp(28px, 8vw, 36px);
+        }
+
+        .mobile-menu-button {
+            font-size: clamp(16px, 4vw, 20px);
+        }
+
+        .skills {
+            font-size: clamp(50px, 12vw, 60px);
+        }
+
+        .skills1 {
+            font-size: clamp(20px, 5vw, 24px);
+        }
+
+        .web-development3, .uiux-web, .cms-e-commerce, .creative-multimedia {
+            font-size: clamp(18px, 4.5vw, 20px);
+        }
+
+        .about-me1 {
+            font-size: clamp(20px, 5vw, 24px);
+        }
+
+        .who-is-sudharsan-container {
+            font-size: clamp(18px, 4.5vw, 20px);
+        }
+
+        .sudharsan {
+            font-size: clamp(20px, 5vw, 24px);
+        }
+
+        .projects {
+            font-size: clamp(50px, 12vw, 60px);
+        }
+
+        .my-projects {
+            font-size: clamp(20px, 5vw, 24px);
+        }
+
+        .web-development {
+            font-size: clamp(18px, 4.5vw, 20px);
+        }
+
+        .get-in-touch-container {
+            font-size: clamp(24px, 6vw, 28px);
+        }
+
+        .contact {
+            font-size: clamp(18px, 4.5vw, 20px);
+        }
+    }
+}
