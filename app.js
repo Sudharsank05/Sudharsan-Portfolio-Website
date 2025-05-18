@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu functionality
-    const mobileMenuButton = document.createElement('div');
+    // Mobile Menu Functionality
+    const mobileMenuButton = document.createElement('button');
     mobileMenuButton.className = 'mobile-menu-button';
     mobileMenuButton.innerHTML = '☰';
+    mobileMenuButton.setAttribute('aria-label', 'Toggle navigation menu');
     document.querySelector('.navbar').appendChild(mobileMenuButton);
     
     const contactParent = document.querySelector('.contact-parent');
@@ -11,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         contactParent.classList.toggle('active');
     });
     
-    // Close menu when clicking a link
     document.querySelectorAll('.contact-parent a').forEach(link => {
         link.addEventListener('click', function() {
             if (window.innerWidth <= 768) {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Counter animation
+    // Counter Animation for Stats Section
     const animateCounters = () => {
         const counters = document.querySelectorAll('.count');
         const duration = 1500;
@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 current += increment;
                 if (current >= target) {
                     clearInterval(counterInterval);
-                    current = target;
                     counter.textContent = target + '+';
                 } else {
                     counter.textContent = Math.floor(current);
@@ -44,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
-    // Intersection Observer for animations
+    // Intersection Observer for Section Animations
     const sections = document.querySelectorAll('.section-2, .section-3, .section-4, .footer');
     
     const observerOptions = {
@@ -68,21 +67,22 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 
-    // Smooth scrolling
+    // Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
                 window.scrollTo({
-                    top: target.offsetTop - (window.innerWidth <= 768 ? 60 : 80),
+                    top: target.offsetTop - (window.innerWidth <= 768 ? navbarHeight : 100),
                     behavior: 'smooth'
                 });
             }
         });
     });
 
-    // Adjust layout on resize
+    // Handle Navbar Visibility on Resize
     function handleResize() {
         if (window.innerWidth > 768) {
             contactParent.style.display = 'flex';
@@ -93,5 +93,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Initialize
-});
+    handleResize();
+}); 
