@@ -35,7 +35,7 @@ You can simply double-click the index.html file or use a live server extension i
 
 📂 Project Structure
 
-```Sudharsan-Portfolio-Website/
+-> ```Sudharsan-Portfolio-Website/
 ├── assets/          
 ├── backups/     
 ├── app.js             
