@@ -35,16 +35,16 @@ You can simply double-click the index.html file or use a live server extension i
 
 📂 Project Structure
 
-Sudharsan-Portfolio-Website/
-├── assets/             # Images and other assets
-├── backups/            # Backup files
-├── app.js              # Main JavaScript file
-├── global.css          # Global CSS styles
-├── index.css           # Tailwind CSS imports
-├── index.html          # Main HTML file
-├── tailwind.config.js  # Tailwind CSS configuration
-└── README.md           # Project documentation
-
+```Sudharsan-Portfolio-Website/
+├── assets/          
+├── backups/     
+├── app.js             
+├── global.css          
+├── index.css
+├── index.html          
+├── tailwind.config.js  
+└── README.md         
+```
 
 📌 To-Do
  Make the website fully responsive.
