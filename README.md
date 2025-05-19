@@ -33,19 +33,6 @@ Open index.html in your browser:
 
 You can simply double-click the index.html file or use a live server extension if you're using VS Code.
 
-📂 Project Structure
-
--> ```Sudharsan-Portfolio-Website/
-├── assets/          
-├── backups/     
-├── app.js             
-├── global.css          
-├── index.css
-├── index.html          
-├── tailwind.config.js  
-└── README.md         
-```
-
 📌 To-Do
  Make the website fully responsive.
  Add more projects to the showcase.
