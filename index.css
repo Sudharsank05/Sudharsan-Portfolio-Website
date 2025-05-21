@@ -1334,7 +1334,9 @@ body {
         left: auto;
         width: 100%;
     }
-
+    br{
+      display: none;  
+    }
     .image-removebg-preview-6-1, .pointer-icon, .present {
         display: block;
         position: relative;
