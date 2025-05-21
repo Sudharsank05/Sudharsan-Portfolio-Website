@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Trigger Hero Section Animations on Load
+    const heroElements = document.querySelectorAll('.hero-title, .hero-sud-icon, .web-developer-container, .im-sudharsan1');
+    heroElements.forEach((el, index) => {
+        setTimeout(() => {
+            el.classList.add('animate');
+        }, index * 200); // Stagger animations by 200ms
+    });
+
     // Mobile Menu Functionality
     const mobileMenuButton = document.createElement('button');
     mobileMenuButton.className = 'mobile-menu-button';
@@ -12,10 +20,23 @@ document.addEventListener('DOMContentLoaded', function() {
         contactParent.classList.toggle('active');
     });
     
-    document.querySelectorAll('.contact-parent a').forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
-                contactParent.classList.remove('active');
+    // Smooth Scrolling for Navigation Links
+    document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                const navbarHeight = document.querySelector('.navbar').offsetHeight || 60;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                // Close mobile menu
+                if (window.innerWidth <= 768) {
+                    contactParent.classList.remove('active');
+                }
             }
         });
     });
@@ -55,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate');
-                
                 if (entry.target.classList.contains('section-3')) {
                     animateCounters();
                 }
@@ -65,21 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     sections.forEach(section => {
         observer.observe(section);
-    });
-
-    // Smooth Scrolling for Navigation Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                window.scrollTo({
-                    top: target.offsetTop - (window.innerWidth <= 768 ? navbarHeight : 100),
-                    behavior: 'smooth'
-                });
-            }
-        });
     });
 
     // Handle Navbar Visibility on Resize
@@ -94,4 +99,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('resize', handleResize);
     handleResize();
-}); 
+});
